@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../components/container";
 import HeroPost from "../components/hero-post";
-import Intro from "../components/intro";
+// import Intro from "../components/intro";
 import MoreStories from "../components/more-stories";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
@@ -13,7 +13,7 @@ export default function Index({ data: { allPosts, site, blog } }) {
   return (
     <Container>
       <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
-      <Intro />
+//       <Intro />
       {heroPost && (
         <HeroPost
           title={heroPost.title}
